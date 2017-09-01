@@ -30,7 +30,7 @@ public class Pile {
 	}
 	
 	public int peek() {
-		return pileInt.get(0);
+		return pileInt.get((pileInt.size())-1);
 	}
 
 	public int getSize() {

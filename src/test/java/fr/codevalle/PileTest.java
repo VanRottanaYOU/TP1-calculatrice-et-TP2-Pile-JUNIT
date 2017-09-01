@@ -39,8 +39,9 @@ public class PileTest {
 	@Test
 	public void PeekTest() {
 		 maPile.push(1);
+		 maPile.push(2);
 		 maPile.peek();
-		 assertTrue(maPile.getPileInt().get(0)==1);
+		 assertTrue(2==maPile.peek());
 	}
 	
 }
