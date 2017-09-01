@@ -31,7 +31,7 @@ public class PileTest {
 	
 	@Test
 	public void popAllTest() {
-	
+		maPile.push(1);
 		 maPile.popAll();
 		 assertTrue(maPile.getPileInt().size()==0);
 	}
