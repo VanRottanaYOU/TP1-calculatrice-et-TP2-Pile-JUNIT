@@ -18,7 +18,8 @@ public class PileTest {
 	@Test
 	public void pushTest() {
 		 maPile.push(1);
-		 assertTrue(maPile.getPileInt().contains(1));
+		 assertTrue(maPile.getPileInt().get((maPile.getPileInt().size())-1)==1);
+//		 assertTrue(maPile.getPileInt().contains(1));
 	}
 	
 	@Test
