@@ -9,6 +9,7 @@ import org.junit.Test;
 public class PileTest {
 
 	Pile maPile;
+	// essayer avec PileObject
 	
 	@Before
 	public void initialition() {
@@ -27,6 +28,7 @@ public class PileTest {
 		maPile.push(1);
 		int sizeAvant=maPile.getSize();
 		 maPile.pop();
+		 //la liste est vide au départ donc il n'y avait qu'un seul élément
 		 assertTrue(maPile.getPileInt().size()==(sizeAvant-1));
 	}
 	
@@ -34,6 +36,7 @@ public class PileTest {
 	public void popAllTest() {
 		maPile.push(1);
 		 maPile.popAll();
+		 //on pourrait ajouter autant d'élément qu'on veut mais faut bien s'arrêter
 		 assertTrue(maPile.getPileInt().size()==0);
 	}
 	
